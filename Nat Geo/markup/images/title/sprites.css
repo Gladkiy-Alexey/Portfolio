@@ -1,0 +1,34 @@
+.ico-event, .ico-news, .ico-popular, .ico-store, .ico-video{
+	background: url(sprites.png) no-repeat;
+}
+
+.ico-event{
+	background-position: 0 -400px ;
+	width: 16px;
+	height: 16px;
+}
+
+.ico-news{
+	background-position: 0 -300px ;
+	width: 15px;
+	height: 15px;
+}
+
+.ico-popular{
+	background-position: 0 -200px ;
+	width: 16px;
+	height: 16px;
+}
+
+.ico-store{
+	background-position: 0 -100px ;
+	width: 15px;
+	height: 15px;
+}
+
+.ico-video{
+	background-position: 0 0;
+	width: 16px;
+	height: 12px;
+}
+
