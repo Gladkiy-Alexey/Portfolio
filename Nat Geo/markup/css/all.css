@@ -42,22 +42,17 @@ a:hover {
 	height: 100%;
 	text-indent: -99999px;
 }
-.header-holder .right-align {
-	float: right;
-}
-.header-holder .right-align:after {
-	content: "";
-	display: block;
-	clear: both;
-}
 .header-block {
 	border: solid 1px #e8e8e8;
 	border-radius: 3px;
 	background: #fff;
 }
 .search {
-	float: left;
+	float: right;
 	margin: 0 23px 0 0;
+}
+.search form {
+	display: inline-block;
 	padding: 10px 11px 9px 9px;
 }
 .search fieldset {
@@ -66,12 +61,12 @@ a:hover {
 	padding: 0;
 }
 .search input[type="text"] {
-	width: 43%;
+	width: 152px;
 	border: none;
 	padding: 3px 3px 3px 33px;
 	background: url(../images/ico-search.png) no-repeat 0 50%;
 	color: #ccc;
-	font: italic 1.5rem/1.5rem "Myriad Pro", Tahoma, Arial, Helvetica, sans-serif;
+	font: italic 1.5rem/2.5rem "Myriad Pro", Tahoma, Arial, Helvetica, sans-serif;
 }
 .search select {
 	font-size: 1.5rem;
@@ -129,7 +124,7 @@ a:hover {
 	display: inline-block;
 	font: bold 1.6rem/1.6rem "Myriad Pro", Tahoma, Arial, Helvetica, sans-serif;
 	width: 12%;
-	min-width: 100px;
+	min-width: 90px;
 	text-align: center;
 }
 #header .nav .active a,
@@ -1006,9 +1001,6 @@ a:hover {
 	.search {
 		margin: 0 7px 0 0;
 	}
-	.search input[type="text"] {
-		width: 210px;
-	}
 	.authoriz {
 		padding: 10px 10px 8px;
 	}
@@ -1059,31 +1051,21 @@ a:hover {
 	.logo {
 		margin: 2px 0 5px;
 	}
-	.search {
-		padding: 3px;
-		margin-bottom: 5px;
+	.search form{
+		padding: 10px 5px 9px;
 	}
 	.search input[type="text"] {
-		width: 40%;
-		padding: 3px 3px 3px 25px;
+		padding: 3px 3px 3px 23px;
 	}
-	.search select {
+	.search select {;
 		padding: 6px;
 	}
-	.authoriz {
-		padding: 5px 15px 5px 5px;
-	}
-	.authoriz .sing-up {
-		margin-right: 10px;
-	}
-	.authoriz .login {
-		margin-left: 5px;
-	}
 	#header .nav {
-		background: none;
+		background: url(../images/nav-bg.png) repeat-x 0 12px, url(../images/nav-bg.png) repeat-x 0 62px;
 	}
 	#header .nav li {
 		margin-bottom: 5px;
+		width: 24%;
 	}
 	#header .nav a {
 		padding: 30px 0 0;
@@ -1092,7 +1074,11 @@ a:hover {
 		background: none;
 	}
 	#content {
-		width: 95%;
+		width: 100%;
+	}
+	#content .menu a {
+		padding-top: 0;
+		background: none;
 	}
 	#content .menu li {
 		width: 95%;
@@ -1109,7 +1095,7 @@ a:hover {
 	}
 	.news-block,
 	.video-block {
-		width: 48%;
+		width: 49%;
 		float: left;
 	}
 	.news-block {
@@ -1133,5 +1119,38 @@ a:hover {
 	#footer .nav li {
 		padding: 0 5px;
 		margin-bottom: 5px;
+	}
+}
+@media only screen and (max-width: 718px) {
+	.header-holder {
+		text-align: center;
+	}
+	.search {
+		float: none;
+		margin: 5px auto 0;
+		clear: both;
+	}
+	.authoriz {
+		margin-bottom: 5px;
+		padding: 10px 5px 8px;
+	}
+}
+@media only screen and (max-width: 395px) {
+	.search input[type="text"] {
+		width: 30%;
+	}
+	#header .nav li {
+		width: 32%;
+	}
+	#header .nav {
+		background: url(../images/nav-bg.png) repeat-x 0 12px, url(../images/nav-bg.png) repeat-x 0 62px, url(../images/nav-bg.png) repeat-x 0 112px;
+	}
+}
+@media only screen and (max-width: 359px) {
+	.main-tabs .tabset li {
+		width: 47%;
+	}
+	.main-tabs .tabset li:nth-child(odd) {
+		margin-left: 0;
 	}
 }
