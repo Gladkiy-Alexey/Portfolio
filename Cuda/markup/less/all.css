@@ -30,6 +30,16 @@ fieldset {
   padding: 0 20px;
   margin: 0 auto;
 }
+.button {
+  display: block;
+  width: 293px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 70px;
+  border-radius: 3px;
+}
 #header {
   background: #87509c;
   color: #f7f3ea;
@@ -87,7 +97,6 @@ fieldset {
   width: 32px;
   height: 32px;
   margin-top: 2px;
-  background: #643a79;
   position: relative;
   border-radius: 3px;
   text-indent: -9999px;
@@ -100,7 +109,7 @@ fieldset {
   background: #ffffff;
   border-radius: 4px;
   position: absolute;
-  top: 16px;
+  top: 50%;
   left: 25%;
   right: 25%;
   height: 3px;
@@ -115,29 +124,18 @@ fieldset {
   top: 22px;
 }
 #header .opener:hover {
-  opacity: 0.7;
+  background: #643a79;
 }
 #header .greeting {
   text-align: center;
 }
-#header .greeting h3 {
-  margin: 0;
+#header .greeting h2 {
+  margin: 0 0 60px;
   font-size: 4.2rem;
   line-height: 5rem;
-  margin-bottom: 60px;
-}
-#header .greeting h3 span {
-  display: block;
 }
 #header .greeting .work-button {
-  display: block;
-  width: 293px;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  line-height: 70px;
   color: #ffffff;
-  border-radius: 3px;
   background: linear-gradient(to bottom, #eb7d4b 0%, #eb7d4b 94%, #c86a40 94%, #c86a40 100%);
 }
 #header .greeting .work-button:hover {
@@ -157,23 +155,26 @@ fieldset {
   text-transform: uppercase;
   background: url(../images/title-block-separator.png) no-repeat 50% 100%;
 }
-.main-block .title-block p {
+.main-block .title-block p,
+.main-block .title-block address {
   margin: 0;
   font-size: 1.8rem;
   line-height: 2.6rem;
+  font-style: normal;
 }
-.main-block .title-block p span {
+.main-block .title-block p span,
+.main-block .title-block address span {
   display: block;
 }
 .main-block .main-block-list {
   overflow: hidden;
 }
-.main-block .main-block-list div {
+.main-block .main-block-list .item {
   float: left;
   width: 23%;
   text-align: center;
 }
-.main-block .main-block-list div + div {
+.main-block .main-block-list .item + .item {
   margin-left: 20px;
 }
 .services {
@@ -189,20 +190,20 @@ fieldset {
 .services .service-item {
   padding: 190px 0 0;
 }
-.services .service-item h4 {
+.services .service-item h3 {
   margin: 0 0 25px;
   font-size: 2.4rem;
+  line-height: 2.6rem;
   text-transform: uppercase;
 }
-.services .service-item h4 a {
+.services .service-item h3 a {
   color: inherit;
 }
-.services .service-item h4 a:hover {
-  text-decoration: underline;
+.services .service-item h3 a:hover {
+  color: #2a6ea4;
 }
 .services .service-item p {
-  margin: 0 auto;
-  max-width: 200px;
+  margin: 0 10%;
 }
 .services .branding {
   background: url(../images/service-ico-01.png) no-repeat 50% 0;
@@ -234,15 +235,16 @@ fieldset {
   border-radius: 100px;
   background: #878787;
 }
-.team .member h4 {
+.team .member h3 {
   margin: 0 0 17px;
   font-size: 2.4rem;
+  line-height: 2.6rem;
   text-transform: uppercase;
 }
-.team .member h4 a {
+.team .member h3 a {
   color: inherit;
 }
-.team .member h4 a:hover {
+.team .member h3 a:hover {
   color: #27283d;
 }
 .team .member .job {
@@ -253,8 +255,7 @@ fieldset {
   margin-bottom: 27px;
 }
 .team .member p {
-  margin: 0 auto 30px;
-  max-width: 210px;
+  margin: 0 10% 30px;
 }
 .team .member-contacts {
   margin: 0;
@@ -265,7 +266,6 @@ fieldset {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background: url(../images/ico-contacts-sprite.png) no-repeat;
 }
 .team .member-contacts li + li {
   margin-left: 12px;
@@ -274,18 +274,31 @@ fieldset {
   display: block;
   height: 100%;
   text-indent: -99999px;
+  background: url(../images/ico-contacts-sprite.png) no-repeat;
 }
-.team .member-contacts .fb {
+.team .member-contacts .fb a {
   background-position: 0 0;
 }
-.team .member-contacts .twitter {
+.team .member-contacts .fb a:hover {
+  background-position: 0 -50px;
+}
+.team .member-contacts .twitter a {
   background-position: -44px 0;
 }
-.team .member-contacts .linked-in {
-  background-position: -88px 0;
+.team .member-contacts .twitter a:hover {
+  background-position: -44px -50px;
 }
-.team .member-contacts .email {
-  background-position: -132px 0;
+.team .member-contacts .linked-in a {
+  background-position: -87px 0;
+}
+.team .member-contacts .linked-in a:hover {
+  background-position: -87px -50px;
+}
+.team .member-contacts .email a {
+  background-position: -131px 0;
+}
+.team .member-contacts .email a:hover {
+  background-position: -131px -50px;
 }
 .skills {
   background: #ffffff;
@@ -299,7 +312,7 @@ fieldset {
 }
 .skills .skill-item .percent {
   display: block;
-  font-size: 5rem;
+  font-size: 50px;
   line-height: 160px;
   text-align: center;
   width: 160px;
@@ -307,7 +320,7 @@ fieldset {
   margin: 0 auto 32px;
 }
 .skills .skill-item .percent em {
-  font-size: 3.2rem;
+  font-size: 32px;
   font-style: normal;
 }
 .skills .skill-item .web-design {
@@ -322,15 +335,16 @@ fieldset {
 .skills .skill-item .ui-ux {
   background: url(../images/skill-bg-04.png) no-repeat;
 }
-.skills .skill-item h4 {
+.skills .skill-item h3 {
   margin: 0;
   font-size: 2.4rem;
+  line-height: 2.6rem;
   text-transform: uppercase;
 }
-.skills .skill-item h4 a {
+.skills .skill-item h3 a {
   color: inherit;
 }
-.skills .skill-item h4 a:hover {
+.skills .skill-item h3 a:hover {
   color: #27283d;
 }
 .portfolio {
@@ -344,15 +358,7 @@ fieldset {
   margin-bottom: 44px;
 }
 .portfolio .load-button {
-  display: block;
-  width: 293px;
-  margin: 0 auto;
   color: #ffffff;
-  font-size: 1.8rem;
-  line-height: 70px;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 3px;
   background: linear-gradient(to bottom, #17c2a4 0%, #17c2a4 94%, #14a58c 94%, #14a58c 100%);
 }
 .portfolio .load-button:hover {
@@ -388,14 +394,8 @@ fieldset {
 .projects-tabs .tabset a:hover {
   background: #ffffff;
 }
-.projects-tabs .tabset .active a {
+.projects-tabs .tabset .ui-state-active a {
   background: #ffffff;
-}
-.projects-tabs .tab {
-  display: none;
-}
-.projects-tabs .tab.active {
-  display: block;
 }
 .projects-tabs .all-projects-list {
   margin: 0;
@@ -415,18 +415,19 @@ fieldset {
   width: 100%;
   margin-bottom: 30px;
 }
-.projects-tabs .all-projects-list li h4 {
+.projects-tabs .all-projects-list li h3 {
   margin: 0;
   font-size: 1.8rem;
+  line-height: 2.2rem;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
 }
-.projects-tabs .all-projects-list li h4 a {
+.projects-tabs .all-projects-list li h3 a {
   color: inherit;
 }
-.projects-tabs .all-projects-list li h4 a:hover {
-  text-decoration: underline;
+.projects-tabs .all-projects-list li h3 a:hover {
+  color: #60512f;
 }
 .reviews {
   background: #d74680;
@@ -469,6 +470,7 @@ fieldset {
   margin: 0 0 28px;
   font-size: 2.1rem;
   line-height: 3.1rem;
+  font-style: italic;
   quotes: "&quot;";
 }
 .reviews .review .text-block blockquote:before {
@@ -477,17 +479,17 @@ fieldset {
 .reviews .review .text-block blockquote:after {
   content: close-quote;
 }
-.reviews .review .text-block h4 {
+.reviews .review .text-block h3 {
   margin: 0 0 2px;
   font-size: 2.4rem;
   line-height: 2.6rem;
   text-transform: uppercase;
 }
-.reviews .review .text-block h4 a {
+.reviews .review .text-block h3 a {
   color: inherit;
 }
-.reviews .review .text-block h4 a:hover {
-  text-decoration: underline;
+.reviews .review .text-block h3 a:hover {
+  color: #ffb0ff;
 }
 .reviews .review .text-block .job {
   color: #ffdd99;
@@ -505,19 +507,19 @@ fieldset {
   margin-bottom: 77px;
 }
 .contact .contact-form {
-  width: 78%;
-  margin: 0 auto;
+  margin: 0 11%;
+  text-align: center;
 }
 .contact .contact-form .row {
   overflow: hidden;
   margin-bottom: 27px;
 }
 .contact .contact-form input[type="text"] {
-  width: 45%;
+  width: 43%;
   background: #273a71;
   border: none;
   border-radius: 3px;
-  padding: 18px 0 18px 25px;
+  padding: 18px 15px 18px 25px;
   color: #ffffff;
   font-size: 1.8rem;
   line-height: 2.2rem;
@@ -531,7 +533,7 @@ fieldset {
 .contact .contact-form textarea {
   width: 94% !important;
   height: 200px;
-  margin-bottom: 60px;
+  margin: 0 0 60px;
   background: #273a71;
   border: none;
   border-radius: 3px;
@@ -539,19 +541,14 @@ fieldset {
   color: #ffffff;
   font-family: TitilliumWeb, Tahoma, Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
+  line-height: 2.2rem;
 }
 .contact .contact-form input[type="submit"] {
-  display: block;
-  width: 293px;
   padding: 0;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  line-height: 70px;
   color: #ffffff;
   border: none;
-  border-radius: 3px;
   background: linear-gradient(to bottom, #30bae7 0%, #30bae7 94%, #299ec5 94%, #299ec5 100%);
+  cursor: pointer;
 }
 .contact .contact-form input[type="submit"]:hover {
   background: linear-gradient(to bottom, rgba(48, 186, 231, 0.7) 0%, rgba(48, 186, 231, 0.7) 94%, rgba(41, 158, 197, 0.7) 94%, rgba(41, 158, 197, 0.7) 100%);
@@ -582,38 +579,24 @@ fieldset {
   color: #30bae7;
 }
 @media only screen and (max-width: 1024px) {
-  #header .greeting h3 span {
-    display: inline;
+  .main-block .main-block-list .item {
+    width: 48%;
+    margin: 0 0 40px;
   }
-  .services .service-item {
-    width: 22%;
+  .main-block .main-block-list .item:nth-child(odd) {
+    margin-right: 20px;
   }
-  .services .service-item + .service-item {
-    margin-left: 15px;
+  .main-block .main-block-list .item + .item {
+    margin-left: 0;
+  }
+  .services .main-block {
+    padding-bottom: 88px;
   }
   .team .main-block {
     padding-bottom: 87px;
   }
-  .team .team-members-list .member {
-    width: 48%;
-    margin: 0 0 40px;
-  }
-  .team .team-members-list .member:nth-child(odd) {
-    margin-right: 20px;
-  }
-  .team .team-members-list .member p {
-    margin: 0 0 30px;
-    max-width: 100%;
-  }
   .skills .main-block {
     padding-bottom: 83px;
-  }
-  .skills .skills-list .skill-item {
-    width: 48%;
-    margin: 0 0 40px;
-  }
-  .skills .skills-list .skill-item:nth-child(odd) {
-    margin-right: 20px;
   }
   .reviews .review {
     width: auto;
@@ -626,7 +609,6 @@ fieldset {
     margin-bottom: 70px;
   }
   .contact .contact-form {
-    width: 100%;
     margin: 0;
   }
   .contact .contact-form textarea {
@@ -637,6 +619,9 @@ fieldset {
   }
 }
 @media only screen and (max-width: 768px) {
+  .button {
+    width: 230px;
+  }
   #header {
     padding: 30px 0;
   }
@@ -649,13 +634,10 @@ fieldset {
   #header .opener {
     display: block;
   }
-  #header .greeting h3 {
+  #header .greeting h2 {
     font-size: 3.4rem;
     line-height: 4rem;
     margin-bottom: 30px;
-  }
-  #header .greeting .work-button {
-    width: 230px;
   }
   .main-block {
     padding: 30px 20px;
@@ -672,15 +654,15 @@ fieldset {
   .main-block .main-block-list {
     overflow: visible;
   }
-  .main-block .main-block-list div {
+  .main-block .main-block-list .item {
     float: none;
     width: auto;
     margin-bottom: 30px;
   }
-  .main-block .main-block-list div:last-child {
+  .main-block .main-block-list .item:last-child {
     margin-bottom: 0;
   }
-  .main-block .main-block-list div + div {
+  .main-block .main-block-list .item + .item {
     margin-left: 0;
   }
   .services .main-block {
@@ -692,12 +674,8 @@ fieldset {
   .services .service-item {
     padding: 150px 0 0;
   }
-  .services .service-item h4 {
+  .services .service-item h3 {
     margin: 0 0 15px;
-  }
-  .services .service-item p {
-    margin: 0 auto;
-    max-width: none;
   }
   .team .main-block {
     padding-bottom: 30px;
@@ -715,7 +693,7 @@ fieldset {
   .team .team-members-list .member img {
     margin: 0 auto 30px;
   }
-  .team .team-members-list .member h4 {
+  .team .team-members-list .member h3 {
     margin: 0 0 15px;
   }
   .team .team-members-list .member .job {
@@ -746,9 +724,6 @@ fieldset {
   }
   .portfolio .title-block {
     margin-bottom: 30px;
-  }
-  .portfolio .load-button {
-    width: 230px;
   }
   .projects-tabs {
     margin-bottom: 30px;
@@ -818,25 +793,20 @@ fieldset {
   }
   .contact .contact-form .row {
     overflow: visible;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
   .contact .contact-form input[type="text"] {
     width: 90%;
     display: block;
+    margin: 0 auto 15px;
   }
-  .contact .contact-form input[type="text"]:first-child {
-    float: none;
-    margin-bottom: 15px;
-  }
+  .contact .contact-form input[type="text"]:first-child,
   .contact .contact-form input[type="text"]:last-child {
     float: none;
   }
   .contact .contact-form textarea {
     width: 85% !important;
     margin-bottom: 30px;
-  }
-  .contact .contact-form input[type="submit"] {
-    width: 230px;
   }
   #footer {
     padding: 20px 0;
