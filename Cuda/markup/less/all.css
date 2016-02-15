@@ -18,6 +18,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 form,
 fieldset {
@@ -515,7 +516,8 @@ fieldset {
   margin-bottom: 27px;
 }
 .contact .contact-form input[type="text"] {
-  width: 43%;
+  box-sizing: border-box;
+  width: 48%;
   background: #273a71;
   border: none;
   border-radius: 3px;
@@ -531,7 +533,8 @@ fieldset {
   float: right;
 }
 .contact .contact-form textarea {
-  width: 94% !important;
+  box-sizing: border-box;
+  width: 100% !important;
   height: 200px;
   margin: 0 0 60px;
   background: #273a71;
@@ -610,9 +613,6 @@ fieldset {
   }
   .contact .contact-form {
     margin: 0;
-  }
-  .contact .contact-form textarea {
-    width: 93% !important;
   }
   #footer .social-list li + li {
     margin-left: 2%;
@@ -796,7 +796,7 @@ fieldset {
     margin-bottom: 0;
   }
   .contact .contact-form input[type="text"] {
-    width: 90%;
+    width: 100%;
     display: block;
     margin: 0 auto 15px;
   }
@@ -805,7 +805,6 @@ fieldset {
     float: none;
   }
   .contact .contact-form textarea {
-    width: 85% !important;
     margin-bottom: 30px;
   }
   #footer {
@@ -824,19 +823,11 @@ fieldset {
   }
 }
 @media only screen and (max-width: 500px) {
-  .contact .contact-form textarea {
-    width: 84% !important;
-    margin-bottom: 30px;
-  }
   #footer .social-list li {
     width: 33%;
   }
 }
 @media only screen and (max-width: 380px) {
-  .contact .contact-form textarea {
-    width: 81% !important;
-    margin-bottom: 30px;
-  }
   #footer .social-list li {
     width: 49%;
   }
