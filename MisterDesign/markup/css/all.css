@@ -1,0 +1,399 @@
+@font-face {
+    font-family: "RockwellRegular";
+    src: url("../fonts/RockwellRegular/RockwellRegular.eot");
+    src: url("../fonts/RockwellRegular/RockwellRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RockwellRegular/RockwellRegular.woff") format("woff"),
+    url("../fonts/RockwellRegular/RockwellRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 40px 0 0;
+	min-width: 450px;
+	color: #fff;
+	font: 2.1rem RockwellRegular, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+form, fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.block {
+	box-sizing: content-box;
+	max-width: 940px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+
+
+.header-holder {
+	border: none;
+	margin: 0 -15px;
+	min-height: 40px;
+	background: #333;
+}
+
+.header-holder>.block .logo {
+	margin: 0;
+}
+
+.header-holder .logo {
+	padding: 14px 0 0 5px;
+	color: #fff;
+	font-size: 2.1rem;
+	font-weight: bold;
+}
+
+.header-holder .logo span {
+	color: #527a7a;
+}
+
+.header-holder .logo:hover {
+	color: #bfbfbf;
+}
+
+.header-holder .logo:hover span {
+	color: #6fa6a6;
+}
+
+.header-holder .navbar-toggle:hover,
+.header-holder .navbar-toggle:focus {
+	border-color: #527a7a;
+	background: #527a7a;
+}
+
+.header-holder .navbar-toggle:hover .icon-bar,
+.header-holder .navbar-toggle:focus .icon-bar {
+	background: #fff;
+}
+
+.header-nav {
+	font-size: 2.1rem;
+	font-weight: bold;
+}
+
+.header-nav ul {
+	padding: 8px 0;
+}
+
+.header-nav li+li {
+	margin-left: 5px;
+}
+
+.header-nav .navbar-nav li a {
+	border-radius: 8px;
+	padding: 6px 14px;
+	color: #fff;
+	text-shadow: 1px 1px 0 #3f4343;
+}
+
+.header-nav .navbar-nav .active a,
+.header-nav .navbar-nav .active a:hover,
+.header-nav .navbar-nav li a:hover {
+	color: #fff;
+	background: #527a7a;
+}
+
+
+main {
+	border-bottom: solid 7px #000;
+	margin: 0 -15px;
+	padding: 80px 0 55px;
+	background: url(../images/body-bg.png) no-repeat 50% 0, #699;
+}
+
+main h1 {
+	margin: 0 0 67px;
+	color: #eee;
+	font-size: 7.5rem;
+	line-height: 1.1;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0 rgba(85,85,85,0.5);
+}
+
+.content {
+	margin-bottom: 70px;
+}
+
+.content .text-block {
+	padding-right: 0;
+}
+
+.content .text-block p {
+	font-weight: bold;
+	text-align: justify;
+}
+
+.img-block img {
+	width: 100%;
+}
+
+.portfolio-slider {
+	position: relative;
+	border: solid 5px #ccc;
+	border-radius: 14px;
+	padding: 5px 40px 30px;
+	background: #fff;
+}
+
+.crsl-item {
+	text-align: center;
+}
+
+.crsl-item img { 
+	border: solid 5px #ccc;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.previous, 
+.next {
+	position: absolute;
+	top: 50%;
+	margin-top: -27px;
+	padding: 0 7px;
+	width: 54px;
+	height: 54px;
+	border: solid 5px #ccc;
+	border-radius: 44px;
+	background: #fff;
+}
+
+.previous:focus, 
+.next:focus {
+	outline: none;
+}
+
+.previous {
+	left: -27px;
+	clip: rect(0, 27px, 54px, 0);
+}
+
+.next {
+	right: -27px;
+	text-align: right;
+	clip: rect(0, 54px, 54px, 27px);
+}
+
+.control-btn {
+	position: static;
+	color: #333;
+	font-weight: normal;
+	line-height: 44px;
+}
+
+/** clearfix **/
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	clear: both; 
+	visibility: hidden; 
+	line-height: 0; 
+	height: 0; 
+}
+
+.clearfix {
+	display: inline-block; 
+}
+ 
+html[xmlns] .clearfix { 
+	display: block; 
+}
+
+* html .clearfix { 
+	height: 1%; 
+}
+
+#footer {
+	padding: 33px 0 25px;
+	margin: 0 -15px;
+	background: #333;
+}
+
+.footer-title {
+	margin: 0 0 30px;
+	font-size: 2.1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.order-form {
+	position: relative;
+	padding-right: 40px;
+}
+
+.form-row {
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.form-row label {
+	width: 30%;
+	float: left;
+}
+
+.form-row span {
+	float: right;
+}
+
+.form-row input,
+.form-row textarea {
+	box-sizing: border-box;
+	border: solid 1px #699;
+	padding: 3px;
+	width: 67%;
+	float: right;
+	color: #000;
+	line-height: 2.4rem;
+}
+
+.form-row textarea {
+	width: 67% !important;
+	height: 99px;
+}
+
+.order-form button {
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	border: none;
+	border-radius: 8px;
+	box-sizing: padding-box;
+	padding: 0 10px;
+	width: 28%;
+	background: #699;
+	line-height: 28px;
+}
+
+.order-form button:hover {
+	color: #bfbfbf;
+	background: rgba(66,99,99,0.8);
+}
+
+.feedback blockquote {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.feedback blockquote q {
+	display: block;
+	margin-bottom: 20px;
+	font: italic 2.1rem Georgia, Tahoma, Arial, Helvetica, sans-serif;
+	text-align: center;
+	quotes: "&quot;";
+}
+
+.feedback blockquote q::before {
+	content: open-quote;
+}
+
+.feedback blockquote q::after {
+	content: close-quote;
+}
+
+.feedback blockquote cite {
+	display: block;
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+}
+
+.feedback blockquote cite::before {
+	content: "";
+}
+
+.feedback blockquote cite a:hover {
+	color: #bfbfbf;
+	text-decoration: none;
+}
+
+
+@media only screen and (max-width: 950px) {
+	.order-form {
+		padding-right: 0;
+	}
+	
+	.form-row label {
+		width: 38%;
+	}
+	
+	.form-row input,
+	.form-row textarea {
+		width: 60%;
+	}
+	
+	.form-row textarea {
+		width: 60% !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.header-nav li+li {
+		margin: 5px 0 0;
+	}
+	
+	main {
+		padding: 40px 0;
+	}
+
+	main h1 {
+		margin: 0 0 40px;
+		text-align: center;
+	}
+	
+	.content {
+		margin-bottom: 40px;
+	}
+
+	.content .text-block {
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	.img-block {
+		padding: 0;
+	}
+	
+	.img-block img {
+		width: 100%;
+	}
+	
+	.form-holder {
+		margin-bottom: 30px;
+	}
+	
+	.footer-title {
+		margin: 0 0 20px;
+		text-align: center;
+	}
+	
+	.form-row label {
+		width: 36%;
+	}
+	
+	.form-row input,
+	.form-row textarea {
+		width: 62%;
+	}
+	
+	.form-row textarea {
+		width: 62% !important;
+	}
+}
