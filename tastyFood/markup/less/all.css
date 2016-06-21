@@ -51,6 +51,18 @@ fieldset {
   content: '';
   clear: both;
 }
+.nav-holder .nav-btn {
+  display: none;
+  float: left;
+  padding: 0 30px;
+  background: url(../images/nav-separator.png) repeat-y 100% 0;
+  line-height: 34px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.nav-holder .nav-btn:hover {
+  background: url(../images/nav-separator.png) repeat-y 100% 0, linear-gradient(to bottom, #a0bd4b 0%, #9bb846 25%, #91b03c 50%, #86a730 75%, #81a22b 100%);
+}
 .nav-holder .nav {
   float: left;
   margin: 0;
@@ -70,9 +82,6 @@ fieldset {
   color: #ffffff;
 }
 .nav-holder .nav a:hover {
-  background: linear-gradient(to bottom, #a0bd4b 0%, #9bb846 25%, #91b03c 50%, #86a730 75%, #81a22b 100%);
-}
-.nav-holder .nav .active a {
   background: linear-gradient(to bottom, #a0bd4b 0%, #9bb846 25%, #91b03c 50%, #86a730 75%, #81a22b 100%);
 }
 .nav-holder .right-align {
@@ -326,8 +335,33 @@ fieldset {
   #wrapper {
     padding: 0 10px;
   }
+  .nav-holder {
+    position: relative;
+  }
+  .nav-holder .nav-btn {
+    display: block;
+  }
+  .nav-holder .nav {
+    position: absolute;
+    left: -1px;
+    top: 35px;
+    z-index: 1;
+    display: none;
+    border-right: solid 1px #84973d;
+    border-bottom: solid 1px #83963c;
+    border-left: solid 1px #83963c;
+  }
+  .nav-holder .nav li {
+    display: block;
+    background: url(../images/nav-separator-horizontal.png) repeat-x 0 100%, linear-gradient(to bottom, #b0ca5f 0%, #acc75a 25%, #a1be4e 50%, #9bb946 75%, #95b43f 100%);
+    padding: 0 0 2px;
+  }
+  .nav-holder .nav li:last-child {
+    padding: 0;
+    background: linear-gradient(to bottom, #b0ca5f 0%, #acc75a 25%, #a1be4e 50%, #9bb946 75%, #95b43f 100%);
+  }
   .nav-holder .nav a {
-    padding: 0 10px;
+    padding: 0 50px;
   }
   .nav-holder .search-form {
     margin: 6px 10px 0 0;
@@ -354,7 +388,7 @@ fieldset {
   .aside-menu {
     float: left;
     width: 30%;
-    min-width: 115px;
+    min-width: 125px;
     border-bottom: none;
     margin-right: 20px;
   }
@@ -366,6 +400,15 @@ fieldset {
   }
 }
 @media only screen and (max-width: 650px) {
+  #footer {
+    padding: 5px 22px 20px 12px;
+  }
+  #footer .copyright-holder {
+    width: 98%;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 520px) {
   .nav-holder .special {
     float: left;
     background: none;
@@ -382,39 +425,21 @@ fieldset {
   .nav-holder .special:hover {
     background: url(../images/nav-separator.png) repeat-y 0 0, linear-gradient(to bottom, #a0bd4b 0%, #9bb846 25%, #91b03c 50%, #86a730 75%, #81a22b 100%);
   }
-  #footer {
-    padding: 5px 22px 20px 12px;
-  }
-  #footer .copyright-holder {
-    width: 98%;
-    padding-bottom: 10px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .nav-holder .right-align {
-    float: none;
-    clear: left;
-    width: 270px;
-    margin: 0 auto;
-  }
-  .nav-holder .search-form input[type="text"] {
-    width: 180px;
-  }
-  .nav-holder .special:hover {
-    background: linear-gradient(to bottom, #a0bd4b 0%, #9bb846 25%, #91b03c 50%, #86a730 75%, #81a22b 100%);
-  }
 }
 @media only screen and (max-width: 460px) {
   #header .logo {
     margin: 0 0 20px 40px;
+  }
+  .nav-holder .nav-btn {
+    padding: 0 15px;
+  }
+  .nav-holder .search-form input[type="text"] {
+    width: 130px;
   }
   .recipe img {
     float: none;
     width: 100%;
     margin-bottom: 12px;
     border: solid 1px #e4e5df;
-  }
-  .pagination li:nth-child(n+11) {
-    display: none;
   }
 }
