@@ -1,315 +1,331 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta charset="utf-8">
-	<title>Cuda</title>
-	<link rel="stylesheet" href="css/jquery-ui.css">
-  	<script src="js/lib/jquery.js"></script>
-  	<script src="js/lib/jquery-ui.min.js"></script>
-	<link rel="stylesheet/less" type="text/css" href="less/all.less" />
-    <script src="js/less.js" type="text/javascript"></script>
-    <link media="all" rel="stylesheet" href="less/all.css">
-    <script>
-  	$(function() {
-    	$( "#tabs" ).tabs();
-  	});
-  </script>
-</head>
-<body>
-<div id="wrapper">
-	<header id="header">
-		<div class="container">
-			<div class="header-holder">
-				<h1 class="logo"><a href="#">Cuda</a></h1>
-				<nav>
-					<a href="#" class="opener"><span>Menu</span></a>
-					<ul class="nav">
-						<li class="active"><a href="#">Home</a></li><!--
-						--><li><a href="#">About</a></li><!--
-						--><li><a href="#">Work</a></li><!--
-						--><li><a href="#">Blog</a></li><!--
-						--><li><a href="#">Contact</a></li>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Cuda</title>
+
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link rel="stylesheet/less" type="text/css" href="less/all.less" />
+		<link media="all" rel="stylesheet" href="less/all.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<div class="container">
+					<div class="header-holder">
+						<h1 class="logo"><a href="#">Cuda</a></h1>
+						<nav>
+							<a href="#" class="opener"><span>Menu</span></a>
+							<ul class="nav">
+								<li class="active"><a href="#">Home</a></li><!--
+								--><li><a href="#">About</a></li><!--
+								--><li><a href="#">Work</a></li><!--
+								--><li><a href="#">Blog</a></li><!--
+								--><li><a href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					
+					<div class="greeting">
+						<h2>
+							Hi there! We are the new kids on the block and we build awesome websites and mobile apps.
+						</h2>
+						<a class="work-button button" href="#">Work with us!</a>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section class="services">
+					<div class="container main-block">
+						<header class="title-block">
+							<h2>Services we provide</h2>
+							<p>
+								We are working with both individuals and businesses from all over the globe 
+								<span>to create awesome websites and applications.</span>
+							</p>
+						</header>
+						
+						<div class="services-list main-block-list">
+							<div class="service-item item branding">
+								<h3><a href="#">Branding</a></h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+								</p>
+							</div>
+							<div class="service-item item design">
+								<h3><a href="#">Design</a></h3>
+								<p>
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+								</p>
+							</div>
+							<div class="service-item item development">
+								<h3><a href="#">Development</a></h3>
+								<p>
+									At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.
+								</p>
+							</div>
+							<div class="service-item item rocket">
+								<h3><a href="#">Rocket science</a></h3>
+								<p>
+									Et harum quidem rerum est et expedita distinctio. Nam libero tempore.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="team">
+					<div class="container main-block">
+						<header class="title-block">
+							<h2>Meet our beautiful team</h2>
+							<p>
+								We are a small team of designers and developers, who help brands with big ideas.
+							</p>
+						</header>
+						
+						<div class="team-members-list main-block-list">
+							<div class="member item">
+								<a href="#"><img src="images/member-photo-01.jpg" alt=""></a>
+								<h3><a href="#">Anne Hathaway</a></h3>
+								<span class="job">CEO / Marketing guru</span>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+								</p>
+								<ul class="member-contacts">
+									<li class="fb"><a href="#">fb</a></li><!--
+									--><li class="twitter"><a href="#">twitter</a></li><!--
+									--><li class="linked-in"><a href="#"> LinkedIn</a></li><!--
+									--><li class="email"><a href="#">email</a></li>
+								</ul>
+							</div>
+							<div class="member item">
+								<a href="#"><img src="images/member-photo-02.jpg" alt=""></a>
+								<h3><a href="#">Kate Upton</a></h3>
+								<span class="job">Creative director</span>
+								<p>
+									Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.
+								</p>
+								<ul class="member-contacts">
+									<li class="twitter"><a href="#">twitter</a></li><!--
+									--><li class="linked-in"><a href="#"> LinkedIn</a></li><!--
+									--><li class="email"><a href="#">email</a></li>
+								</ul>
+							</div>
+							<div class="member item">
+								<a href="#"><img src="images/member-photo-03.jpg" alt=""></a>
+								<h3><a href="#">Olivia Wilde</a></h3>
+								<span class="job">Lead designer</span>
+								<p>
+									Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.
+								</p>
+								<ul class="member-contacts">
+									<li class="fb"><a href="#">fb</a></li><!--
+									--><li class="twitter"><a href="#">twitter</a></li><!--
+									--><li class="linked-in"><a href="#"> LinkedIn</a></li><!--
+									--><li class="email"><a href="#">email</a></li>
+								</ul>
+							</div>
+							<div class="member item">
+								<a href="#"><img src="images/member-photo-04.jpg" alt=""></a>
+								<h3><a href="#">Ashley Greene</a></h3>
+								<span class="job">SEO / Developer</span>
+								<p>
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+								</p>
+								<ul class="member-contacts">
+									<li class="fb"><a href="#">fb</a></li><!--
+									--><li class="twitter"><a href="#">twitter</a></li><!--
+									--><li class="email"><a href="#">email</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="skills">
+					<div class="container main-block">
+						<header class="title-block">
+							<h2>We got skills!</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+								<span>tempor incididunt ut labore et dolore magna aliqua.</span>
+							</p>
+						</header>
+						
+						<div class="skills-list main-block-list">
+							<div class="skill-item item">
+								<span class="percent web-design">90<em>%</em></span>
+								<h3><a href="#">Web design</a></h3>
+							</div>
+							<div class="skill-item item">
+								<span class="percent html-css">75<em>%</em></span>
+								<h3><a href="#">Html/css</a></h3>
+							</div>
+							<div class="skill-item item">
+								<span class="percent grahpic">70<em>%</em></span>
+								<h3><a href="#">Graphic design</a></h3>
+							</div>
+							<div class="skill-item item">
+								<span class="percent ui-ux">85<em>%</em></span>
+								<h3><a href="#">Ui/ux</a></h3>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="portfolio">
+					<div class="container main-block">
+						<header class="title-block">
+							<h2>Our portfolio</h2>
+							<p>
+								Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+								<span>consectetur, adipisci velit, sed quia non numquam</span>
+							</p>
+						</header>
+						
+						<div class="projects-tabs" id="tabs">
+							<ul class="tabset">
+								<li><a href="#tab-all">All</a></li><!--
+								--><li><a href="#tab-web">Web</a></li><!--
+								--><li><a href="#tab-apps">Apps</a></li><!--
+								--><li><a href="#tab-icons">Icons</a></li>
+							</ul>
+							<div class="tab" id="tab-all">
+								<ul class="all-projects-list">
+									<li>
+										<a href="#"><img src="images/project-img-01.png"></a>
+										<h3><a href="#">Isometric Perspective Mock-Up</a></h3>
+									</li>
+									<li>
+										<a href="#"><img src="images/project-img-02.png"></a>
+										<h3><a href="#">Time Zone App UI</a></h3>
+									</li>
+									<li>
+										<a href="#"><img src="images/project-img-03.png"></a>
+										<h3><a href="#">Viro Media Players UI</a></h3>
+									</li>
+									<li>
+										<a href="#"><img src="images/project-img-04.png"></a>
+										<h3><a href="#">Blog / Magazine Flat UI Kit</a></h3>
+									</li>
+								</ul>
+							</div>
+							<div class="tab" id="tab-web">
+								Tab-web
+							</div>
+							<div class="tab" id="tab-apps">
+								Tab-apps
+							</div>
+							<div class="tab" id="tab-icons">
+								Tab-icons
+							</div>
+						</div>
+						<a class="load-button button" href="#">Load more projects</a>
+					</div>
+				</section>
+				
+				<section class="reviews">
+					<div class="container main-block">
+						<header class="title-block">
+							<h2>What people say about us</h2>
+							<p>
+								Our clients love us!
+							</p>
+						</header>
+						
+						<div class="reviews-list">
+							<div class="review">
+								<img src="images/review-photo-01.jpg" alt="">
+								<div class="text-block">
+									<blockquote>
+										Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.
+									</blockquote>
+									<h3><a href="#">Chanel Iman</a></h3>
+									<span class="job">CEO of Pinterest</span>
+								</div>
+							</div>
+							<div class="review">
+								<img src="images/review-photo-02.jpg" alt="">
+								<div class="text-block">
+									<blockquote>
+										Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.
+									</blockquote>
+									<h3><a href="#">Adriana Lima</a></h3>
+									<span class="job">Founder of Instagram</span>
+								</div>
+							</div>
+							<div class="review">
+								<img src="images/review-photo-03.jpg" alt="">
+								<div class="text-block">
+									<blockquote>
+										Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.
+									</blockquote>
+									<h3><a href="#">Anne Hathaway</a></h3>
+									<span class="job">Lead Designer at Behance</span>
+								</div>
+							</div>
+							<div class="review">
+								<img src="images/review-photo-04.jpg" alt="">
+								<div class="text-block">
+									<blockquote>
+										Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus cursus neque.
+									</blockquote>
+									<h3><a href="#">Emma Stone</a></h3>
+									<span class="job">Co-Founder of Shazam</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="contact">
+					<div class="container  main-block">
+						<header class="title-block">
+							<h2>Get in touch</h2>
+							<address>
+								1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+							</address>
+						</header>
+						
+						<form class="contact-form">
+							<fieldset>
+								<div class="row">
+									<input type="text" name="name" placeholder="Your Name">
+									<input type="text" name="email" placeholder="Your Email">
+								</div>
+								<textarea name="message" placeholder="Your Message"></textarea>
+								<input class="button" type="submit" value="Send message">
+							</fieldset>
+						</form>
+					</div>
+				</section>
+			</main>
+
+			<footer id="footer">
+				<div class="container">
+					<ul class="social-list">
+						<li><a href="#">Facebook</a></li><!--
+						--><li><a href="#">Twitter</a></li><!--
+						--><li><a href="#">Google+</a></li><!--
+						--><li><a href="#">LinkedIn</a></li><!--
+						--><li><a href="#">Behance</a></li><!--
+						--><li><a href="#">Dribbble</a></li><!--
+						--><li><a href="#">GitHub</a></li>
 					</ul>
-				</nav>
-			</div>
-			<div class="greeting">
-				<h2>
-					Hi there! We are the new kids on the block and we build awesome websites and mobile apps.
-				</h2>
-				<a class="work-button button" href="#">Work with us!</a>
-			</div>
+				</div>
+			</footer>
 		</div>
-	</header>
-	
-	<main>
-		<section class="services">
-			<div class="container  main-block">
-				<header class="title-block">
-					<h2>Services we provide</h2>
-					<p>
-						We are working with both individuals and businesses from all over the globe 
-						<span>to create awesome websites and applications.</span>
-					</p>
-				</header>
-				<div class="services-list main-block-list">
-					<div class="service-item item branding">
-						<h3><a href="#">Branding</a></h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-						</p>
-					</div>
-					<div class="service-item item design">
-						<h3><a href="#">Design</a></h3>
-						<p>
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
-						</p>
-					</div>
-					<div class="service-item item development">
-						<h3><a href="#">Development</a></h3>
-						<p>
-							At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.
-						</p>
-					</div>
-					<div class="service-item item rocket">
-						<h3><a href="#">Rocket science</a></h3>
-						<p>
-							Et harum quidem rerum est et expedita distinctio. Nam libero tempore.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="team">
-			<div class="container  main-block">
-				<header class="title-block">
-					<h2>Meet our beautiful team</h2>
-					<p>
-						We are a small team of designers and developers, who help brands with big ideas.
-					</p>
-				</header>
-				<div class="team-members-list main-block-list">
-					<div class="member item">
-						<a href="#"><img src="images/member-photo-01.jpg" alt=""></a>
-						<h3><a href="#">Anne Hathaway</a></h3>
-						<span class="job">CEO / Marketing guru</span>
-						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
-						</p>
-						<ul class="member-contacts">
-							<li class="fb"><a href="#">fb</a></li><!--
-							--><li class="twitter"><a href="#">twitter</a></li><!--
-							--><li class="linked-in"><a href="#"> LinkedIn</a></li><!--
-							--><li class="email"><a href="#">email</a></li>
-						</ul>
-					</div>
-					<div class="member item">
-						<a href="#"><img src="images/member-photo-02.jpg" alt=""></a>
-						<h3><a href="#">Kate Upton</a></h3>
-						<span class="job">Creative director</span>
-						<p>
-							Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.
-						</p>
-						<ul class="member-contacts">
-							<li class="twitter"><a href="#">twitter</a></li><!--
-							--><li class="linked-in"><a href="#"> LinkedIn</a></li><!--
-							--><li class="email"><a href="#">email</a></li>
-						</ul>
-					</div>
-					<div class="member item">
-						<a href="#"><img src="images/member-photo-03.jpg" alt=""></a>
-						<h3><a href="#">Olivia Wilde</a></h3>
-						<span class="job">Lead designer</span>
-						<p>
-							Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.
-						</p>
-						<ul class="member-contacts">
-							<li class="fb"><a href="#">fb</a></li><!--
-							--><li class="twitter"><a href="#">twitter</a></li><!--
-							--><li class="linked-in"><a href="#"> LinkedIn</a></li><!--
-							--><li class="email"><a href="#">email</a></li>
-						</ul>
-					</div>
-					<div class="member item">
-						<a href="#"><img src="images/member-photo-04.jpg" alt=""></a>
-						<h3><a href="#">Ashley Greene</a></h3>
-						<span class="job">SEO / Developer</span>
-						<p>
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-						</p>
-						<ul class="member-contacts">
-							<li class="fb"><a href="#">fb</a></li><!--
-							--><li class="twitter"><a href="#">twitter</a></li><!--
-							--><li class="email"><a href="#">email</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="skills">
-			<div class="container  main-block">
-				<header class="title-block">
-					<h2>We got skills!</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-						<span>tempor incididunt ut labore et dolore magna aliqua.</span>
-					</p>
-				</header>
-				<div class="skills-list main-block-list">
-					<div class="skill-item item">
-						<span class="percent web-design">90<em>%</em></span>
-						<h3><a href="#">Web design</a></h3>
-					</div>
-					<div class="skill-item item">
-						<span class="percent html-css">75<em>%</em></span>
-						<h3><a href="#">Html/css</a></h3>
-					</div>
-					<div class="skill-item item">
-						<span class="percent grahpic">70<em>%</em></span>
-						<h3><a href="#">Graphic design</a></h3>
-					</div>
-					<div class="skill-item item">
-						<span class="percent ui-ux">85<em>%</em></span>
-						<h3><a href="#">Ui/ux</a></h3>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="portfolio">
-			<div class="container  main-block">
-				<header class="title-block">
-					<h2>Our portfolio</h2>
-					<p>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
-						<span>consectetur, adipisci velit, sed quia non numquam</span>
-					</p>
-				</header>
-				<div class="projects-tabs" id="tabs">
-					<ul class="tabset">
-						<li><a href="#tab-all">All</a></li><!--
-						--><li><a href="#tab-web">Web</a></li><!--
-						--><li><a href="#tab-apps">Apps</a></li><!--
-						--><li><a href="#tab-icons">Icons</a></li>
-					</ul>
-					<div class="tab" id="tab-all">
-						<ul class="all-projects-list">
-							<li>
-								<a href="#"><img src="images/project-img-01.png"></a>
-								<h3><a href="#">Isometric Perspective Mock-Up</a></h3>
-							</li>
-							<li>
-								<a href="#"><img src="images/project-img-02.png"></a>
-								<h3><a href="#">Time Zone App UI</a></h3>
-							</li>
-							<li>
-								<a href="#"><img src="images/project-img-03.png"></a>
-								<h3><a href="#">Viro Media Players UI</a></h3>
-							</li>
-							<li>
-								<a href="#"><img src="images/project-img-04.png"></a>
-								<h3><a href="#">Blog / Magazine Flat UI Kit</a></h3>
-							</li>
-						</ul>
-					</div>
-					<div class="tab" id="tab-web">
-						Tab-web
-					</div>
-					<div class="tab" id="tab-apps">
-						Tab-apps
-					</div>
-					<div class="tab" id="tab-icons">
-						Tab-icons
-					</div>
-				</div>
-				<a class="load-button button" href="#">Load more projects</a>
-			</div>
-		</section>
-		<section class="reviews">
-			<div class="container main-block">
-				<header class="title-block">
-					<h2>What people say about us</h2>
-					<p>
-						Our clients love us!
-					</p>
-				</header>
-				<div class="reviews-list">
-					<div class="review">
-						<img src="images/review-photo-01.jpg" alt="">
-						<div class="text-block">
-							<blockquote>
-								Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.
-							</blockquote>
-							<h3><a href="#">Chanel Iman</a></h3>
-							<span class="job">CEO of Pinterest</span>
-						</div>
-					</div>
-					<div class="review">
-						<img src="images/review-photo-02.jpg" alt="">
-						<div class="text-block">
-							<blockquote>
-								Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.
-							</blockquote>
-							<h3><a href="#">Adriana Lima</a></h3>
-							<span class="job">Founder of Instagram</span>
-						</div>
-					</div>
-					<div class="review">
-						<img src="images/review-photo-03.jpg" alt="">
-						<div class="text-block">
-							<blockquote>
-								Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.
-							</blockquote>
-							<h3><a href="#">Anne Hathaway</a></h3>
-							<span class="job">Lead Designer at Behance</span>
-						</div>
-					</div>
-					<div class="review">
-						<img src="images/review-photo-04.jpg" alt="">
-						<div class="text-block">
-							<blockquote>
-								Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus cursus neque.
-							</blockquote>
-							<h3><a href="#">Emma Stone</a></h3>
-							<span class="job">Co-Founder of Shazam</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="contact">
-			<div class="container  main-block">
-				<header class="title-block">
-					<h2>Get in touch</h2>
-					<address>
-						1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
-					</address>
-				</header>
-				<form class="contact-form">
-					<fieldset>
-						<div class="row">
-							<input type="text" name="name" placeholder="Your Name">
-							<input type="text" name="email" placeholder="Your Email">
-						</div>
-						<textarea name="message" placeholder="Your Message"></textarea>
-						<input class="button" type="submit" value="Send message">
-					</fieldset>
-				</form>
-			</div>
-		</section>
-	</main>
-	
-	<footer id="footer">
-		<div class="container">
-			<ul class="social-list">
-				<li><a href="#">Facebook</a></li><!--
-				--><li><a href="#">Twitter</a></li><!--
-				--><li><a href="#">Google+</a></li><!--
-				--><li><a href="#">LinkedIn</a></li><!--
-				--><li><a href="#">Behance</a></li><!--
-				--><li><a href="#">Dribbble</a></li><!--
-				--><li><a href="#">GitHub</a></li>
-			</ul>
-		</div>
-	</footer>
-</div>
-</body>
+
+		<script src="js/less.js" type="text/javascript"></script>
+		<script src="js/lib/jquery.js"></script>
+		<script src="js/lib/jquery-ui.min.js"></script>
+		<script>
+			$(function() {
+				$("#tabs").tabs();
+			});
+		</script>
+	</body>
 </html>

@@ -3,25 +3,30 @@
 html {
 	font-size: 62.5%;
 }
+
 body {
 	margin: 0;
 	min-width: 320px;
 	font: 1.6rem/2.4rem TitilliumWeb, Tahoma, Arial, Helvetica, sans-serif;
 }
+
 a {
 	text-decoration: none;
 	color: inherit;
 }
+
 form, fieldset {
 	padding: 0;
 	margin: 0;
 	border: none;
 }
+
 .container {
 	max-width: 1100px;
 	padding: 0 20px;
 	margin: 0 auto;
 }
+
 .button {
 	display: block;
 	width: 293px;
@@ -32,57 +37,70 @@ form, fieldset {
 	line-height: 70px;
 	border-radius: 3px;
 }
+
+
 #header {
 	background: @header-bg;
 	color: @header-text-color;
 	padding: 58px 0 145px;
+	
 	.header-holder {
 		padding: 0 8px 0 40px;
 		margin-bottom: 145px;
+		
 		&:after {
 			display: block;
 			content: '';
 			clear: both;
 		}
 	}
+	
 	.logo {
 		float: left;
 		margin: 0;
 		width: 117px;
 		height: 37px;
 		background: url(../images/logo.png) no-repeat;
+		
 		a {
 			display: block;
 			height: 100%;
 			text-indent: -99999px;
 		}
 	}
+	
 	.nav {
 		float: right;
 		margin: 0;
 		padding: 2px 0 3px;
 		list-style: none;
+		
 		li {
 			display: inline-block;
 			text-transform: uppercase;
 			line-height: 32px;
 		}
+		
 		li+li {
 			margin-left: 11px;
 		}
+		
 		a {
 			display: block;
 			color: @nav-text-color;
 			padding: 0 17px;
 			border-radius: 3px;
+			
 			&:hover {
 				background: @nav-hover-bg;
 			}
 		}
+		
 		.active a {
 			background: @nav-hover-bg;
 		}
 	}
+	
 	.opener {
 		float: right;
 		width: 32px;
@@ -93,6 +111,7 @@ form, fieldset {
 		text-indent: -9999px;
 		overflow: hidden;
 		display: none;
+		
 		&:before, &:after, span {
 			background: @nav-text-color;
 			border-radius: 4px;
@@ -103,38 +122,49 @@ form, fieldset {
 			height: 3px;
 			margin-top: -2px;
 		}
+		
 		&:before {
 			content: '';
 			top: 10px;
 		}
+		
 		&:after {
 			content: '';
 			top: 22px;
 		}
+		
 		&:hover {
 			background: @nav-hover-bg;;
 		}
 	}
+	
 	.greeting {
 		text-align: center;
+		
 		h2 {
 			margin: 0 0 60px;
 			font-size: 4.2rem;
 			line-height: 5rem;
 		}
+		
 		.work-button {
 			color: @work-button-text-color;
 			background: @work-button-bg;
+			
 			&:hover {
 				background: @work-button-hover-bg;
 			}
 		}
 	}
 }
+
+
 .main-block {
 	padding: 120px 20px 110px;
+	
 	.title-block {
 		text-align: center;
+		
 		h2 {
 			margin: 0 0 24px;
 			padding-bottom: 26px;
@@ -143,77 +173,100 @@ form, fieldset {
 			text-transform: uppercase;
 			background: url(../images/title-block-separator.png) no-repeat 50% 100%;
 		}
+		
 		p, address {
 			margin: 0;
 			font-size: 1.8rem;
 			line-height: 2.6rem;
 			font-style: normal;
+			
 			span {
 				display: block;
 			}
 		}
 	}
+	
 	.main-block-list {
 		overflow: hidden;
+		
 		.item {
 			float: left;
 			width: 23%;
 			text-align: center;
 		}
+		
 		.item+.item {
 			margin-left: 20px;
 		}
 	}
 }
+
+
 .services {
 	background: @services-bg;
 	color: @services-text-color;
+	
 	.main-block {
 		padding-bottom: 128px;
 	}
+	
 	.title-block {
 		margin-bottom: 78px;
 	}
+	
 	.service-item {
 		padding: 190px 0 0;
+		
 		h3 {
 			margin: 0 0 25px;
 			font-size: 2.4rem;
 			line-height: 2.6rem;
 			text-transform: uppercase;
+			
 			a {
 				color: inherit;
+				
 				&:hover {
 					color: @services-text-hover-color;
 				}
 			}
 		}
+		
 		p {
 			margin: 0 10%;
 		}
 	}
+	
 	.branding {
 		background: url(../images/service-ico-01.png) no-repeat 50% 0;
 	}
+	
 	.design {
 		background: url(../images/service-ico-02.png) no-repeat 50% 0;
 	}
+	
 	.development {
 		background: url(../images/service-ico-03.png) no-repeat 50% 0;
 	}
+	
 	.rocket {
 		background: url(../images/service-ico-04.png) no-repeat 50% 0;
 	}
 }
+
+
 .team {
 	background: @team-bg;
 	color: @team-text-color;
+	
 	.main-block {
 		padding-bottom: 127px;
 	}
+	
 	.title-block {
 		margin-bottom: 79px;
 	}
+	
 	.member {
 		img {
 			display: block;
@@ -223,18 +276,22 @@ form, fieldset {
 			border-radius: 100px;
 			background: #878787;
 		}
+		
 		h3 {
 			margin: 0 0 17px;
 			font-size: 2.4rem;
 			line-height: 2.6rem;
 			text-transform: uppercase;
+			
 			a {
 				color: inherit;
+				
 				&:hover {
 					color: @team-text-hover-color;
 				}
 			}
 		}
+		
 		.job {
 			display: block;
 			line-height: 1.8rem;
@@ -242,63 +299,81 @@ form, fieldset {
 			color: @job-text-color;
 			margin-bottom: 27px;
 		}
+		
 		p {
 			margin: 0 10% 30px;
 		}
 	}
+	
 	.member-contacts {
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		
 		li {
 			display: inline-block;
 			width: 32px;
 			height: 32px;
 		}
+		
 		li+li {
 			margin-left: 12px;
 		}
+		
 		a {
 			display: block;
 			height: 100%;
 			text-indent: -99999px;
 			background: url(../images/ico-contacts-sprite.png) no-repeat;
 		}
+		
 		.fb a {
 			background-position: 0 0;
+			
 			&:hover {
 				background-position: 0 -50px;
 			}
 		}
+		
 		.twitter a {
 			background-position: -44px 0;
+			
 			&:hover {
 				background-position: -44px -50px;
 			}
 		}
+		
 		.linked-in a {
 			background-position: -87px 0;
+			
 			&:hover {
 				background-position: -87px -50px;
 			}
 		}
+		
 		.email a {
 			background-position: -131px 0;
+			
 			&:hover {
 				background-position: -131px -50px;
 			}
 		}
 	}
 }
+
+
 .skills {
 	background: @skills-bg;
 	color: @skills-text-color;
+	
 	.main-block {
 		padding-bottom: 123px;
 	}
+	
 	.title-block {
 		margin-bottom: 85px;
 	}
+	
 	.skill-item {
 		.percent {
 			display: block;
@@ -308,30 +383,38 @@ form, fieldset {
 			width: 160px;
 			height: 160px;
 			margin: 0 auto 32px;
+			
 			em {
 				font-size: 32px;
 				font-style: normal;
 			}
 		}
+		
 		.web-design {
 			background: url(../images/skill-bg-01.png) no-repeat;
 		}
+		
 		.html-css {
 			background: url(../images/skill-bg-02.png) no-repeat;
 		}
+		
 		.grahpic {
 			background: url(../images/skill-bg-03.png) no-repeat;
 		}
+		
 		.ui-ux {
 			background: url(../images/skill-bg-04.png) no-repeat;
 		}
+		
 		h3 {
 			margin: 0;
 			font-size: 2.4rem;
 			line-height: 2.6rem;
 			text-transform: uppercase;
+			
 			a {
 				color: inherit;
+				
 				&:hover {
 					color: @skills-text-hover-color;
 				}
@@ -339,30 +422,39 @@ form, fieldset {
 		}
 	}
 }
+
+
 .portfolio {
 	background: @portfolio-bg;
 	color: @portfolio-text-color;
+	
 	.main-block {
 		padding-bottom: 109px;
 	}
+	
 	.title-block {
 		margin-bottom: 44px;
 	}
+	
 	.load-button {
 		color: @load-button-text-color;
 		background: @load-button-bg;
+		
 		&:hover {
 			background: @load-button-hover-bg;
 		}
 	}
 }
+
 .projects-tabs {
 	margin-bottom: 19px;
+	
 	.tabset {
 		margin: 0 0 62px;
 		padding: 0;
 		list-style: none;
 		text-align: center;
+		
 		li {
 			display: inline-block;
 			font-size: 1.8rem;
@@ -372,38 +464,47 @@ form, fieldset {
 			min-width: 90px;
 			border-radius: 3px;
 		}
+		
 		li+li {
 			margin-left: 10px;
 		}
+		
 		a {
 			display: block;
 			border-radius: 3px;
 			color: inherit;
 			width: 100%;
+			
 			&:hover {
 				background: @tabset-hover-bg;
 			}
 		}
+		
 		.ui-state-active a {
 			background: @tabset-hover-bg;
 		}
 	}
+	
 	.all-projects-list {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
+		
 		li {
 			float: left;
 			width: 48%;
 			padding: 0 0 65px;
+			
 			&:nth-child(odd) {
 				padding-right: 20px;
 			}
+			
 			img {
 				width: 100%;
 				margin-bottom: 30px;
 			}
+			
 			h3 {
 				margin: 0;
 				font-size: 1.8rem;
@@ -411,40 +512,50 @@ form, fieldset {
 				font-weight: normal;
 				text-transform: uppercase;
 				text-align: center;
+				
 				a {
 					color: inherit;
+					
 					&:hover {
 						color: @portfolio-text-hover-color;
 					}
 				}
 			}
 		}
-		
 	}
 }
+
+
 .reviews {
 	background: @reviews-bg;
 	color: @reviews-text-color;
+	
 	.main-block {
 		padding-bottom: 128px;
 	}
+	
 	.title-block {
 		margin-bottom: 70px;
 	}
+	
 	.reviews-list {
 		overflow: hidden;
 	}
+	
 	.review {
 		width: 47%;
 		float: left;
 		margin-bottom: 146px;
+		
 		&:nth-child(odd) {
 			margin-right: 40px;
 		}
+		
 		&:nth-last-child(1),
 		&:nth-last-child(2) {
 			margin-bottom: 0;
 		}
+		
 		img {
 			float: left;
 			margin-right: 9%;
@@ -453,34 +564,42 @@ form, fieldset {
 			border-radius: 48px;
 			background: #787878;
 		}
+		
 		.text-block {
 			overflow: hidden;
 			padding: 12px 0 0;
+			
 			blockquote {
 				margin: 0 0 28px;
 				font-size: 2.1rem;
 				line-height: 3.1rem;
 				font-style: italic;
 				quotes: "&quot;";
+				
 				&:before {
 					content: open-quote;
 				}
+				
 				&:after {
 					content: close-quote;
 				}
 			}
+			
 			h3 {
 				margin: 0 0 2px;
 				font-size: 2.4rem;
 				line-height: 2.6rem;
 				text-transform: uppercase;
+				
 				a {
 					color: inherit;
+					
 					&:hover {
 						color: @reviews-text-hover-color;
 					}
 				}
 			}
+			
 			.job {
 				color: #ffdd99;
 				font-size: 1.8rem;
@@ -489,22 +608,29 @@ form, fieldset {
 		}
 	}
 }
+
+
 .contact {
 	background: @contact-bg;
 	color: @contact-text-color;
+	
 	.main-block {
 		padding-bottom: 114px;
 	}
+	
 	.title-block {
 		margin-bottom: 77px;
 	}
+	
 	.contact-form {
 		margin: 0 11%;
 		text-align: center;
+		
 		.row {
 			overflow: hidden;
 			margin-bottom: 27px;
 		}
+		
 		input[type="text"] {
 			box-sizing: border-box;
 			width: 48%;
@@ -515,13 +641,16 @@ form, fieldset {
 			color: @contact-text-color;
 			font-size: 1.8rem;
 			line-height: 2.2rem;
+			
 			&:first-child {
 				float: left;
 			}
+			
 			&:last-child {
 				float: right;
 			}
 		}
+		
 		textarea {
 			box-sizing: border-box;
 			width: 100% !important;
@@ -536,109 +665,136 @@ form, fieldset {
 			font-size: 1.8rem;
 			line-height: 2.2rem;
 		}
+		
 		input[type="submit"] {
 			padding: 0;
 			color: @contact-text-color;
 			border: none;
 			background: @form-button-bg;
 			cursor: pointer;
+			
 			&:hover {
 				background: @form-button-hover-bg;
 			}
 		}
 	}
 }
+
+
 #footer {
 	background: @footer-bg;
 	color: @footer-text-color;
 	padding: 46px 0;
+	
 	.social-list {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 		text-align: center;
+		
 		li {
 			display: inline;
 			font-size: 2.4rem;
 			line-height: 3rem;
 		}
+		
 		li+li {
 			margin-left: 5%;
 		}
+		
 		a {
 			color: inherit;
+			
 			&:hover {
 				color: @footer-text-hover-color;
 			}
 		}
 	}
 }
+
+
 @media only screen and (max-width: 1024px) {
 	.main-block {
 		.main-block-list {
 			.item {
 				width: 48%;
 				margin: 0 0 40px;
+				
 				&:nth-child(odd) {		
 					margin-right: 20px;
 				}
 			}
+			
 			.item+.item {
 				margin-left: 0;
 			}
 		}
 	}
+	
 	.services {
 		.main-block {
 			padding-bottom: 88px;
 		}
 	}
+	
 	.team {
 		.main-block {
 			padding-bottom: 87px;
 		}
 	}
+	
 	.skills {
 		.main-block {
 			padding-bottom: 83px;
 		}
 	}
+	
 	.reviews {
 		.review {
 			width: auto;
 			margin-bottom: 70px;
+			
 			&:nth-child(odd) {
 				margin-right: 0;
 			}
+			
 			&:nth-last-child(2) {
 				margin-bottom: 70px;
 			}
 		}
 	}
+	
 	.contact .contact-form {
 		margin: 0;
 	}
+	
 	#footer .social-list {
 		li+li {
 			margin-left: 2%;
 		}
 	}
 }
+
 @media only screen and (max-width: 768px) {
 	.button {
 		width: 230px;
 	}
+	
 	#header {
 		padding: 30px 0;
+		
 		.header-holder {
 			margin-bottom: 30px;
 		}
+		
 		.nav {
 			display: none;
 		}
+		
 		.opener {
 			display: block;
 		}
+		
 		.greeting {
 			h2 {
 				font-size: 3.4rem;
@@ -647,8 +803,10 @@ form, fieldset {
 			}
 		}
 	}
+	
 	.main-block {
 		padding: 30px 20px;
+		
 		.title-block {
 			h2 {
 				margin: 0 0 20px;
@@ -656,20 +814,25 @@ form, fieldset {
 				font-size: 3rem;
 				line-height: 3.2rem;
 			}
+			
 			p span {
 				display: inline;
 			}
 		}
+		
 		.main-block-list {
 			overflow: visible;
+			
 			.item {
 				float: none;
 				width: auto;
 				margin-bottom: 30px;
+				
 				&:last-child {
 					margin-bottom: 0;
 				}
 			}
+			
 			.item+.item {
 				margin-left: 0;
 			}
@@ -679,162 +842,203 @@ form, fieldset {
 		.main-block {
 			padding-bottom: 30px;
 		}
+		
 		.title-block {
 			margin-bottom: 30px;
 		}
+		
 		.service-item {
 			padding: 150px 0 0;
+			
 			h3 {
 				margin: 0 0 15px;
 			}
 		}
 	}
+	
 	.team {
 		.main-block {
 			padding-bottom: 30px;
 		}
+		
 		.title-block {
 			margin-bottom: 30px;
 		}
+		
 		.team-members-list .member {
 			width: auto;
 			margin: 0 0 30px;
+			
 			&:nth-child(odd) {		
 				margin-right: 0;
 			}
+			
 			img {
 				margin: 0 auto 30px;
 			}
+			
 			h3 {
 				margin: 0 0 15px;
 			}
+			
 			.job {
 				margin-bottom: 15px;
 			}
+			
 			p {
 				margin: 0 0 20px;
 				max-width: none;
 			}
 		}
 	}
+	
 	.skills {
 		.main-block {
 			padding-bottom: 30px;
 		}
+		
 		.title-block {
 			margin-bottom: 30px;
 		}
+		
 		.skills-list .skill-item {
 			width: auto;
 			margin: 0 0 30px;
+			
 			&:nth-child(odd) {		
 				margin-right: 0;
 			}
+			
 			.percent {
 				margin: 0 auto 20px;
 			}
 		}
 	}
+	
 	.portfolio {
 		.main-block {
 			padding-bottom: 30px;
 		}
+		
 		.title-block {
 			margin-bottom: 30px;
 		}
 	}
+	
 	.projects-tabs {
 		margin-bottom: 30px;
+		
 		.tabset {
 			margin: 0 0 30px;
+			
 			li {
 				font-size: 1.5rem;
 				line-height: 30px;
 				min-width: 65px;
 			}
+			
 			li+li {
 				margin-left: 5px;
 			}
 		}
+		
 		.all-projects-list {
 			overflow: visible;
+			
 			li {
 				float: none;
 				width: auto;
 				padding: 0 0 30px;
+				
 				&:nth-child(odd) {
 					padding-right: 0;
 				}
+				
 				&:last-child {
 					padding: 0;
 				}
+				
 				img {
 					margin-bottom: 15px;
 				}
 			}
 		}
 	}
+	
 	.reviews {
 		.main-block {
 			padding-bottom: 30px;
 		}
+		
 		.title-block {
 			margin-bottom: 30px;
 		}
+		
 		.review {
 			float: none;
 			margin-bottom: 30px;
 			text-align: center;
+			
 			&:nth-child(odd) {
 				margin-right: 0;
 			}
+			
 			&:nth-last-child(2) {
 				margin-bottom: 30px;
 			}
+			
 			img {
 				display: block;
 				float: none;
 				margin: 0 auto 15px;
 			}
+			
 			.text-block {
 				overflow: visible;
 				padding: 0;
+				
 				blockquote {
 					margin: 0 0 15px;
 				}
 			}
 		}
 	}
+	
 	.contact {
 		.main-block {
 			padding-bottom: 30px;
 		}
+		
 		.title-block {
 			margin-bottom: 30px;
 		}
+		
 		.contact-form {
 			.row {
 				overflow: visible;
 				margin-bottom: 0;
 			}
+			
 			input[type="text"] {
 				width: 100%;
 				display: block;
 				margin: 0 auto 15px;
+				
 				&:first-child, &:last-child {
 					float: none;
-					
 				}
 			}
+			
 			textarea {
 				margin-bottom: 30px;
 			}
 		}
 	}
+	
 	#footer {
 		padding: 20px 0;
 		.social-list {
-
+			
 			li {
 				display: inline-block;
 				font-size: 2rem;
@@ -843,12 +1047,14 @@ form, fieldset {
 				text-align: center;
 				width: 23%;
 			}
+			
 			li+li {
 				margin-left: 0;
 			}
 		}
 	}
 }
+
 @media only screen and (max-width: 500px) {
 	#footer {
 		.social-list {
@@ -858,6 +1064,7 @@ form, fieldset {
 		}
 	}
 }
+
 @media only screen and (max-width: 380px) {
 	#footer {
 		.social-list {
