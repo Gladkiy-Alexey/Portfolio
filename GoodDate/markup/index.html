@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>GoodDate</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!--Font Awesome-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<!--jQuery UI-->
+		<link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+		<link media="all" rel="stylesheet" href="css/all.css" />
+	</head>
+	<body>
+		<div class="container-fluid" id="wrapper">
+			<header id="header">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+						<ul class="chosen">
+							<li><a href="#">Добавить в избранное</a></li>
+							<li><a href="#">Сделать стартовой</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="subscribe">
+							<a href="#">Подпишитесь на статьи нашего сайта
+								<i class="fa fa-rss"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row header-holder">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<h1 class="logo">
+							<a href="#">GoodDate.com Memory day</a>
+						</h1>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-6 center-wrapper">
+						<form class="search-form">
+							<button type="submit">search</button>
+							<div class="field-wrapper">
+								<input type="text" name="search-for" placeholder="поиск" />
+							</div>
+						</form>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="account-block">
+							<button class="btn account-button" data-toggle="modal" data-target="#signinModal">
+								Войти на сайт
+							</button><!--
+							--><button class="btn account-button">Создать аккаунт</button>
+							<a href="#">Восстановить утерянный пароль</a>
+						</div>
+					</div>
+				</div>
+
+				<nav class="navbar navbar-default main-nav" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="main-nav">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Главная</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Для партнеров</a></li>
+							<li><a href="#">Правила</a></li>
+							<li><a href="#">Реклама</a></li>
+							<li><a href="#">Соглашение</a></li>
+							<li><a href="#">Контактная информация</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+
+			<main>
+				<div id="main-slider" class="carousel slide main-slider" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#main-slider" data-slide-to="0" class="active"></li>
+						<li data-target="#main-slider" data-slide-to="1"></li>
+						<li data-target="#main-slider" data-slide-to="2"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/main-slide-01.jpg" alt="" />
+						</div>
+						<div class="item">
+							<img src="images/main-slide-02.jpg" alt="" />
+						</div>
+						<div class="item">
+							<img src="images/main-slide-03.jpg" alt="" />
+						</div>
+					</div>
+
+					<a class="left carousel-control" href="#main-slider" data-slide="prev">&laquo;</a>
+					<a class="right carousel-control" href="#main-slider" data-slide="next">&raquo;</a>
+				</div>
+
+				<div class="news-title">
+					<h2>Новости нашего сайта:</h2>
+					<a href="#" class="news-archive">
+						<span>Все новости из архива</span><i class="glyphicon glyphicon-chevron-right"></i>
+					</a>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12 content">
+						<div class="post">
+							<div class="date">
+								<em>2</em>
+								<span>03.2012</span>
+							</div>
+							<div class="post-content">
+								<h2><a href="#">ArtCircles познакомит владельцев iPad с миром искусства</a></h2>
+								<dl class="meta">
+									<dt>Категория:</dt>
+									<dd>
+										<a href="#">Информация</a>
+									</dd>
+									<dt>Автор статьи:</dt>
+									<dd>
+										<a href="#">Алексей Чертков</a>
+									</dd>
+								</dl>
+								<p>
+									Новое приложение для iPad artCircles предлагает увлекательный способ изучения мира изобразительного искусства. Пользователь получает возможность знакомиться с разнообразными художественными коллекциями, виртуальными кураторами которых выступили деятели культуры от президента Род-Айлендской школы дизайна Джона Маэды до джазового пианиста Эрика Льюиса. 
+								</p>
+								<a href="#" class="more">Читать подробнее ...</a>
+							</div>
+						</div>
+
+						<div class="post">
+							<div class="date">
+								<em>2</em>
+								<span>03.2012</span>
+							</div>
+							<div class="post-content">
+								<h2><a href="#">ArtCircles познакомит владельцев iPad с миром искусства</a></h2>
+								<dl class="meta">
+									<dt>Категория:</dt>
+									<dd>
+										<a href="#">Информация</a>
+									</dd>
+									<dt>Автор статьи:</dt>
+									<dd>
+										<a href="#">Алексей Чертков</a>
+									</dd>
+								</dl>
+								<p>
+									Новое приложение для iPad artCircles предлагает увлекательный способ изучения мира изобразительного искусства. Пользователь получает возможность знакомиться с разнообразными художественными коллекциями, виртуальными кураторами которых выступили деятели культуры от президента Род-Айлендской школы дизайна Джона Маэды до джазового пианиста Эрика Льюиса. 
+								</p>
+								<a href="#" class="more">Читать подробнее ...</a>
+							</div>
+						</div>
+
+						<div class="post">
+							<div class="date">
+								<em>21</em>
+								<span>03.2012</span>
+							</div>
+							<div class="post-content">
+								<h2><a href="#">ArtCircles познакомит владельцев iPad с миром искусства</a></h2>
+								<dl class="meta">
+									<dt>Категория:</dt>
+									<dd>
+										<a href="#">Информация</a>
+									</dd>
+									<dt>Автор статьи:</dt>
+									<dd>
+										<a href="#">Алексей Чертков</a>
+									</dd>
+								</dl>
+								<p>
+									Новое приложение для iPad artCircles предлагает увлекательный способ изучения мира изобразительного искусства. Пользователь получает возможность знакомиться с разнообразными художественными коллекциями, виртуальными кураторами которых выступили деятели культуры от президента Род-Айлендской школы дизайна Джона Маэды до джазового пианиста Эрика Льюиса. 
+								</p>
+								<a href="#" class="more">Читать подробнее ...</a>
+							</div>
+						</div>
+
+						<div class="paging">
+							<a href="#" class="prev">&laquo;</a>
+							<a href="#" class="next">&raquo;</a>
+						</div>				
+					</div>
+
+					<div class="col-md-3 col-sm-3 col-xs-6 sidebar">
+						<div class="aside-block">
+							<h3>Рубрики сайта</h3>
+							<ul class="categories-list">
+								<li><a href="#">Категория из сайта</a></li>
+								<li><a href="#">Категория из сайта</a></li>
+								<li><a href="#">Категория из сайта</a></li>
+								<li><a href="#">Категория из сайта</a></li>
+								<li><a href="#">Категория из сайта</a></li>
+								<li><a href="#">Категория из сайта</a></li>
+								<li><a href="#">Категория из сайта</a></li>
+								<li><a href="#">Категория из сайта</a></li>
+							</ul>
+						</div>
+
+						<div class="aside-block">
+							<h3>Популярные статьи</h3>
+							<ul class="popular-list">
+								<li>
+									<a href="#">
+										Порошенко: Для реформы госзакупок привлекут "украинских Hавальных"
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Порошенко решил участвовать в парламентских выборах
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										АТ&amp;Т создает вибрирующий руль, который подсказывает где повернуть
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										"Ювентус" побил рекорд по чемпионатов Италии из футбольной лиги
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="aside-block">
+							<h3>Архив новостей</h3>
+							<ul class="archive-list">
+								<li><a href="#">Апрель 2012 (7)</a></li>
+								<li><a href="#">Март 2012 (197)</a></li>
+								<li><a href="#">Февраль 2012 (187)</a></li>
+								<li><a href="#">Январь 2012 (164)</a></li>
+								<li><a href="#">Декабрь 2011 (216)</a></li>
+								<li><a href="#">Ноябрь 2011 (235)</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-3 col-xs-6 sidebar">
+						<div class="aside-block">
+							<h3>Календарь новостей</h3>
+							<div class="calendar" id="datepicker"></div>
+						</div>
+
+						<div class="advt-place">
+							<img src="images/advt.jpg" alt="" />
+							<a href="#">Рекламное место</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="multielement-slider">
+					<div class="slidernav">
+						<div id="navbtns" class="clearfix">
+							<a href="#" class="previous">&laquo;</a>
+							<a href="#" class="next">&raquo;</a>
+						</div>
+					</div>
+
+					<div class="crsl-items" data-navigation="navbtns">
+						<div class="crsl-wrap">
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig01">
+									<img src="images/slide-me-01.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig02">
+									<img src="images/slide-me-02.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig03">
+									<img src="images/slide-me-03.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig04">
+									<img src="images/slide-me-04.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig05">
+									<img src="images/slide-me-05.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig06">
+									<img src="images/slide-me-06.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig07">
+									<img src="images/slide-me-07.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig08">
+									<img src="images/slide-me-08.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig09">
+									<img src="images/slide-me-09.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig10">
+									<img src="images/slide-me-10.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig01">
+									<img src="images/slide-me-01.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig02">
+									<img src="images/slide-me-02.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig03">
+									<img src="images/slide-me-03.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig04">
+									<img src="images/slide-me-04.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig05">
+									<img src="images/slide-me-05.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig06">
+									<img src="images/slide-me-06.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig07">
+									<img src="images/slide-me-07.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig08">
+									<img src="images/slide-me-08.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig09">
+									<img src="images/slide-me-09.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+							<div class="crsl-item">
+								<a href="#" data-toggle="modal" data-target="#slideMeBig10">
+									<img src="images/slide-me-10.jpg" alt="" />
+									<i class="glyphicon glyphicon-plus-sign"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer id="footer">
+				<a href="#header" class="upward-button">To top</a>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<h3 class="logo">
+							<a href="#">GoodDate.com Memory day</a>
+						</h3>
+					</div>
+
+					<div class="col-md-4 col-sm-4 designed col-xs-12">
+							Designed by <a href="#">Bagner</a>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="copyright">
+							<span>Название сайта © Copyright 2011-2012</span>
+							<span>Все права защищены.</span>
+
+							<a href="#" class="statistics"><img src="images/statistics.png" alt="" /></a>
+							<a href="#" class="statistics"><img src="images/sites-catalog.png" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div class="modal fade signin-block" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="form-holder">
+							<img class="avatar" src="images/avatar.jpg" alt="" />
+							<form class="signin-form" id="signin">
+								<div class="form-block">
+									<label for="login">Введите ваш логин:</label>
+									<input type="text" name="login" id="login" required />
+								</div>
+								<div class="form-block">
+									<label for="password">Введите ваш пароль:</label>
+									<input type="password" name="password" id="password" required />
+								</div>	
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" form="signin" class="btn" data-dismiss="modal">Войти в свой аккаунт</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade big-slide-modal" id="slideMeBig01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-01.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade big-slide-modal" id="slideMeBig02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-02.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade big-slide-modal" id="slideMeBig03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-03.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade big-slide-modal" id="slideMeBig04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-04.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade big-slide-modal" id="slideMeBig05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-05.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade big-slide-modal" id="slideMeBig06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-06.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade big-slide-modal" id="slideMeBig07" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-07.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade big-slide-modal" id="slideMeBig08" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-08.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade big-slide-modal" id="slideMeBig09" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-09.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade big-slide-modal" id="slideMeBig10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<img src="images/slide-me-10.jpg" alt="" />
+					<button type="button" class="close-button" data-dismiss="modal">
+						<i class="glyphicon glyphicon-remove-circle"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<!--Responsive slider-->
+		<script type="text/javascript" src="js/responsiveCarousel.min.js"></script>
+		<!--jQuery UI Datepicker-->
+		<script src="js/jquery-ui.min.js"></script>
+
+		<script type="text/javascript">
+			$(function(){
+				$('.crsl-items').carousel({
+					visible: 10,
+					itemMinWidth: 67,
+					itemEqualHeight: 67,
+					itemMargin: 9,
+				});
+
+				$("a[href=#]").on('click', function(e) {
+					e.preventDefault();
+				});
+			});
+
+			$(function() {
+				$( "#datepicker" ).datepicker();
+			});
+		</script>
+	</body>
+</html>
